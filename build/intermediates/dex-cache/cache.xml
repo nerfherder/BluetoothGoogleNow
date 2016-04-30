@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Paul\StudioProjects\BluetoothGoogleNow\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="824eb6cd4365a6ca1ce0f8fa35996aba46aab418">
+        <dex dex="C:\Users\Paul\StudioProjects\BluetoothGoogleNow\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_cad626a24c026e2c6757a8e5ab97eb4580ed59ba\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Paul\StudioProjects\BluetoothGoogleNow\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b80eb6954a859a6a9708fefee5f0dc99ceaaf958">
+        <dex dex="C:\Users\Paul\StudioProjects\BluetoothGoogleNow\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e6e42e5e21a7559eba4c13660e4d170cea0bbdd8\classes.dex" />
+    </item>
+
+</items>
