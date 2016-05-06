@@ -3,6 +3,8 @@ package com.nerfherder.bluetoothgooglenow;
 import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 import static de.robv.android.xposed.XposedHelpers.findClass;
 import static de.robv.android.xposed.XposedHelpers.getObjectField;
+
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.speech.RecognizerIntent;
@@ -45,9 +47,10 @@ public class BluetoothGoogleNow implements IXposedHookLoadPackage  {
       			wl.acquire();
       			//call intent for google now search
       		
-      			Intent intent = new Intent(RecognizerIntent.ACTION_WEB_SEARCH);
+      			Intent intent = new Intent(RecognizerIntent.ACTION_VOICE_SEARCH_HANDS_FREE);
+
 				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, "en-US");
-				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);	
+				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				mContext.startActivity(intent);		
 				
       			wl.release(); //release wakelock

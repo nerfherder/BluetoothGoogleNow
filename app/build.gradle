@@ -1,15 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debug {
+            keyAlias 'nerfherder'
+            keyPassword 'Choubra1'
+            storeFile file('C:/Users/Paul/Documents/nerfherder.jks')
+            storePassword 'Choubra1'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
-
     defaultConfig {
         applicationId "com.nerfherder.bluetoothgooglenow"
         minSdkVersion 19
         targetSdkVersion 23
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -21,5 +27,4 @@ android {
 dependencies {
     provided 'de.robv.android.xposed:api:82'
     provided 'de.robv.android.xposed:api:82:sources'
-
 }
