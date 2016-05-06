@@ -1,14 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        debug {
-            keyAlias 'nerfherder'
-            keyPassword 'Choubra1'
-            storeFile file('C:/Users/Paul/Documents/nerfherder.jks')
-            storePassword 'Choubra1'
-        }
-    }
+
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
     defaultConfig {
